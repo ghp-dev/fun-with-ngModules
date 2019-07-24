@@ -1,0 +1,16 @@
+<div *ngIf="isLoaded">
+  <input type="text" [(ngModel)]="id"/>
+  <div>
+    <button (click)="onLocalId()">Update local</button>
+  </div>
+
+  <div>
+    <button (click)="onSharedId()">Update Shared</button>
+  </div>
+
+  <div>
+    <button (click)="onMigratedId()">Update Migrated Shared</button>
+  </div>
+  <div style="margin-top: 2rem">Module A</div>
+{{serviceId}}
+</div>

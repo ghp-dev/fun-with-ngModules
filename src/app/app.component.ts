@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'shared-services';
+  step = 0;
+
+  moveStep() {
+    this.step = ++this.step % 3;
+  }
 }
